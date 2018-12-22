@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Dancing Script',cursive;
+}
+
+body{
+  font-family: 'Dancing Script';
+  background-color: #02010a;
+  animation: slide 3s;
+  margin-top: 0%;
+}
+/* Animacion de rebote */
+@keyframes slide {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+#contenido{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container span{
+  font-size: 30px;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+}
+
+/* Header */
+header{
+  background:#5b7989;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-radius: 10px 10px 0 0;
+}
+
+header a{
+  color:#ffffff;
+  font-size:25px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header .actual a{
+  text-decoration: none;
+}
+
+header nav{
+  float:right;
+  top: 50%;
+  left: 50%;
+  transform: translate(6%,-100%);
+}
+
+.camara{
+  width: 75%;
+  -webkit-box-shadow: 2px 2px;
+}
+
+/* Container2 */
+#container2{
+  min-height:400px;
+  background:#82c3a6;
+  text-align:center;
+}
+
+#container2 .container{
+  padding-top: 75px;
+}
+
+/* Boxes */
+#boxes{
+  background: #d5c75f;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:45%;
+  padding:10px;
+}
+
+#boxes .box a{
+  font-size: 25px;
+  color: black;
+  font-weight: normal;
+
+}
+
+#boxes .box img{
+  width:100%;
+  box-shadow: 2px 2px #82c3a6;
+}
+
+#imagen1,#imagen2{
+  overflow: visible;
+  transition: .5s;
+}
+
+#imagen1:hover{
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+}
+
+#imagen2:hover{
+  transform: translate(20px, -5px);
+  -ms-transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px);
+}
+
+
+/* Footer */
+footer{
+  padding:20px;
+  color: black;
+  background-color:#C6d5c5;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer-main a{
+  text-decoration: none;
+  color: #8e44ad;
+}
+
+.footer-main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-main .footer-columna{
+  width: calc(100%/4);
+}
+
+.footer-columna{
+  text-align: left;
+}
+
+/* Media Queries */
+@media(max-width: 900px){
+  header #titulo, header nav,#boxes .box{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+  .container span{
+    font-size: 25px;
+  }
+  #container2 img{
+    width: 125%;
+  }
+  header a{
+    font-size: 22px;
+    margin-left: -20px;
+  }
+  .footer-main .footer-columna{
+    width: 100%;
+  }
+}
